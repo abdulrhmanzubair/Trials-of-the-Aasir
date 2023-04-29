@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
     }
-    public void Update()
+     void FixedUpdate()
     {
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
