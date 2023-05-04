@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1837957409979630213}
-  - component: {fileID: 1837957409979630210}
+  - component: {fileID: 4527219033358117193}
   - component: {fileID: 1837957409979630211}
   - component: {fileID: 1837957409979630208}
   - component: {fileID: 1837957409979630209}
@@ -35,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1837957409979630210
+--- !u!114 &4527219033358117193
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,11 +44,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1837957409979630334}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 347544b89b09684499fdd78b59a6c034, type: 3}
+  m_Script: {fileID: 11500000, guid: f1396cb29719ebd449fd71be070c06c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1837957409979630209}
-  Speed: 0
+  speed: 10
 --- !u!50 &1837957409979630211
 Rigidbody2D:
   serializedVersion: 4
@@ -66,10 +65,10 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 2
 --- !u!212 &1837957409979630208
 SpriteRenderer:
   m_ObjectHideFlags: 0
