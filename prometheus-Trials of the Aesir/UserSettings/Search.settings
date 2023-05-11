@@ -7,7 +7,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.DA949528" = "animator"
+	"last_search.DA949528" = "camera"
 	"OpenInspectorPreview.DA949528" = "0"
 	"currentGroup.DA949528" = "all"
 }
@@ -57,6 +57,7 @@ objectSelectors = {
 }
 recentSearches = [
 	"c"
+	"ga"
 	"t"
 ]
 searchItemFavorites = [
