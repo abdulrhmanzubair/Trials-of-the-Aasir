@@ -21,8 +21,8 @@ public class FighterAction : MonoBehaviour
 
     void Awake()
     {
-        hero = GameObject.FindGameObjectWithTag("Hero");
-        enemy = GameObject.FindGameObjectWithTag("Enemy");
+        hero = GameObject.FindGameObjectWithTag("Player");
+        enemy = GameObject.FindGameObjectWithTag("Enemy Big ");
     }
     public void SelectAttack(string btn)
     {
