@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 18;
     Rigidbody2D rbody;
     Animator anim;
+    
 
     // Use this for initialization
     void Start()
@@ -38,11 +39,13 @@ public class PlayerController : MonoBehaviour
         Vector3 Player = transform.localScale;
         if (Input.GetAxis("Horizontal") < 0)
         {
-            Player.x = -1;
+            Player.x = -2;
+            
         }
         if (Input.GetAxis("Horizontal") > 0)
         {
-            Player.x = 1;
+            Player.x = 2;
+            
         }
         transform.localScale = Player;
     }
