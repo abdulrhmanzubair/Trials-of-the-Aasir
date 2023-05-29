@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/GameMenu2.unity
+    guid: 5b4fd2bbaa8ec9b47b55050ec437bc48
+  - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: e31d08c79a3119040b435c64c901f258
   - enabled: 1
-    path: Assets/Scenes/Trial 1.unity
+    path: Assets/Scenes/Trial 7.unity
     guid: 345a98808ecb0114ca26c1d5884b8945
   - enabled: 1
     path: Assets/Scenes/Trial 2.unity
@@ -20,5 +23,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Trial 4.unity
     guid: aac66717a9b2fed49a5b9de577813590
+  - enabled: 1
+    path: Assets/Scenes/Trial 5.unity
+    guid: aca4da0193b502c499a6c4930dddbedd
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: e899733a15b6c534ea6adb3eaeb6d224, type: 2}
