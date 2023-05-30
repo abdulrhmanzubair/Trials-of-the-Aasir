@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7427020811514220409, guid: e205286c910661e4f88c582adce1852b, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7427020811514220409, guid: e205286c910661e4f88c582adce1852b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -335,7 +335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7747708038116110079, guid: 78ed5e9d88796484fa1985dd8f5185da, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7747708038116110079, guid: 78ed5e9d88796484fa1985dd8f5185da, type: 3}
       propertyPath: m_AnchorMax.x
@@ -413,6 +413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Ui
       objectReference: {fileID: 0}
+    - target: {fileID: 7747708038177412907, guid: 78ed5e9d88796484fa1985dd8f5185da, type: 3}
+      propertyPath: m_Text
+      value: 'FAVORESofTheGods : '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78ed5e9d88796484fa1985dd8f5185da, type: 3}
 --- !u!114 &1332022088 stripped
@@ -426,63 +430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1349238034
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2432235456846775242, guid: 5779947ee118a444399a72f7d54d06ff, type: 3}
-      propertyPath: m_Name
-      value: FavoresOfTheGods Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 2432235456846775253, guid: 5779947ee118a444399a72f7d54d06ff, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2432235456846775253, guid: 5779947ee118a444399a72f7d54d06ff, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 445.38214
-      objectReference: {fileID: 0}
-    - target: {fileID: 2432235456846775253, guid: 5779947ee118a444399a72f7d54d06ff, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 178.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2432235456846775253, guid: 5779947ee118a444399a72f7d54d06ff, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.013380099
-      objectReference: {fileID: 0}
-    - target: {fileID: 2432235456846775253, guid: 5779947ee118a444399a72f7d54d06ff, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2432235456846775253, guid: 5779947ee118a444399a72f7d54d06ff, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2432235456846775253, guid: 5779947ee118a444399a72f7d54d06ff, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2432235456846775253, guid: 5779947ee118a444399a72f7d54d06ff, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2432235456846775253, guid: 5779947ee118a444399a72f7d54d06ff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2432235456846775253, guid: 5779947ee118a444399a72f7d54d06ff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2432235456846775253, guid: 5779947ee118a444399a72f7d54d06ff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5779947ee118a444399a72f7d54d06ff, type: 3}
 --- !u!1 &2083364758 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1837957409979630334, guid: 8d417903be3bad44badfd40f54aa03b6, type: 3}
