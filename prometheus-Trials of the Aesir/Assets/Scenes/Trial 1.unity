@@ -8829,11 +8829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d417903be3bad44badfd40f54aa03b6, type: 3}
-<<<<<<< HEAD
---- !u!1 &1888539556
-=======
 --- !u!1 &1821112819
->>>>>>> origin/main
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8841,25 +8837,15 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
-  - component: {fileID: 1888539558}
-  - component: {fileID: 1888539557}
-  m_Layer: 0
-  m_Name: Rocks
-=======
   - component: {fileID: 1821112820}
   - component: {fileID: 1821112821}
   m_Layer: 0
   m_Name: weald.corridor_mid (12)
->>>>>>> origin/main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
---- !u!212 &1888539557
-=======
 --- !u!4 &1821112820
 Transform:
   m_ObjectHideFlags: 0
@@ -8876,7 +8862,6 @@ Transform:
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1821112821
->>>>>>> origin/main
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
