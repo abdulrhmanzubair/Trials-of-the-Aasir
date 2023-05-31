@@ -58,7 +58,7 @@ public class FileDataHandler
 
             string dataToStore = JsonUtility.ToJson(data, true);
 
-            using (FileStream stream = new FileStream(fullPath, FileMode.Create)) ;
+            using (FileStream stream = new FileStream(fullPath, FileMode.Create));
             {
 
                 using (StreamWriter writer = new StreamWriter(stream))

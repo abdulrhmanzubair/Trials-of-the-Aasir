@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
+    public static ItemCollector Counter;
     private int Favores = 0;
     [SerializeField] private Text FAVORESofTheGods;
 
@@ -17,7 +18,15 @@ public class ItemCollector : MonoBehaviour
             Favores ++;
 
             FAVORESofTheGods.text = "FAVORESofTheGods :" + Favores;
+            DontDestroyOnLoad(gameObject);
+            
 
         }
+        
+
+
+
+
+
     }
 }
