@@ -8,10 +8,11 @@ public class CameraController : MonoBehaviour
     public float offset;
     public float offsetSmoothing;
     private Vector3 playerPosition;
-
+    
     // Start is called before the first frame update
     void Start()
     {
+       
 
     }
 
@@ -30,6 +31,7 @@ public class CameraController : MonoBehaviour
         }
 
         transform.position = Vector3.Lerp(transform.position, playerPosition, offsetSmoothing * Time.deltaTime);
-        DontDestroyOnLoad(gameObject);
+        
+        
     }
 }

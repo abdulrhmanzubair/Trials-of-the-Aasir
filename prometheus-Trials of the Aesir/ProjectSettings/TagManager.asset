@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - FavoresOfTheGods
+  - position
   layers:
   - Default
   - TransparentFX

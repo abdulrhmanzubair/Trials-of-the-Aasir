@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 18;
     Rigidbody2D rbody;
     Animator anim;
-    
+    private static bool playerExists;
 
     // Use this for initialization
     void Start()
@@ -15,6 +15,15 @@ public class PlayerController : MonoBehaviour
 
         rbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        if(!playerExists)
+        {
+            playerExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        } else
+        {
+            Destroy(gameObject);
+        }
 
 
     }
@@ -39,14 +48,19 @@ public class PlayerController : MonoBehaviour
         Vector3 Player = transform.localScale;
         if (Input.GetAxis("Horizontal") < 0)
         {
-            Player.x = -2;
-            
+            Player.x = -transform.localScale.x;
+            Player.x = -transform.localScale.y;
+
         }
         if (Input.GetAxis("Horizontal") > 0)
         {
-            Player.x = 2;
-            
+            Player.x = transform.localScale.x;
+            Player.x = transform.localScale.y;
+
+
         }
         transform.localScale = Player;
+
+        
     }
 }

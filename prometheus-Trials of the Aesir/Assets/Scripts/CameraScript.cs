@@ -4,22 +4,13 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-
-    private GameObject player;
-    public float xMin;
-    public float xMax;
-    public float yMin;
-    public float yMax;
-
-    void Start()
-    {
-        player = GameObject.Find("Player");
-    }
+    public Transform target;
 
     void Update()
     {
-        float x = Mathf.Clamp(player.transform.position.x, xMin, xMax);
-        float y = Mathf.Clamp(player.transform.position.y, yMin, yMax);
-        gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
+        Vector3 position = transform.position;
+        position.x = target.transform.position.x + 5f;
+        position.y = target.transform.position.y;
+        transform.position = position;
     }
 }
