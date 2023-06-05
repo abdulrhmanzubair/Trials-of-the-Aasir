@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rbody;
     Animator anim;
     private static bool playerExists;
+
 
     // Use this for initialization
     void Start()
@@ -44,6 +46,9 @@ public class PlayerController : MonoBehaviour
         }
         rbody.MovePosition(rbody.position + movement_vector);
 
+       
+        
+
         // Flip the Character:
         Vector3 Player = transform.localScale;
         if (Input.GetAxis("Horizontal") < 0)
@@ -63,4 +68,6 @@ public class PlayerController : MonoBehaviour
 
         
     }
+
+ 
 }

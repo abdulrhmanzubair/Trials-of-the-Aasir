@@ -6,9 +6,9 @@ using System.IO;
 
 public class FileDataHandler
 {
-    private string dataDirPath = "";
+    private string dataDirPath = "data.game";
 
-    private string dataFileName = "";
+    private string dataFileName = "data.game";
     private Stream stream;
 
     public FileDataHandler (string dataDirPath, string dataFileName)

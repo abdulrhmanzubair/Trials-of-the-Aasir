@@ -9,6 +9,7 @@ public class ItemCollector : MonoBehaviour
     public static ItemCollector Counter;
     private int Favores = 0;
     [SerializeField] private Text FAVORESofTheGods;
+    public GameObject thisSceneFaovres;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,9 +18,9 @@ public class ItemCollector : MonoBehaviour
             
             Destroy(collision.gameObject);
             Favores ++;
-
+          
             FAVORESofTheGods.text = "FAVORESofTheGods :" + Favores;
-            SceneManager.LoadScene("Map");
+            
 
 
 
