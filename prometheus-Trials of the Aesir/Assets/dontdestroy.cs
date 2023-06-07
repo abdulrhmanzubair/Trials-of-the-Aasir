@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class dontdestroy : MonoBehaviour
 {
+    private static bool Object;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!Object)
+        {
+            Object = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        DontDestroyOnLoad(gameObject);
+       
     }
 }

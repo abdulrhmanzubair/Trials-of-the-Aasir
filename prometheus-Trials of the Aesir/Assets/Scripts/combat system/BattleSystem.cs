@@ -31,16 +31,26 @@ public class BattleSystem : MonoBehaviour
 	public BattleHUD enemyHUD;
 	public BattleHUD2 enemyHUD2;
 	public BattleHUD enemyHUD3;
-	
+	private static bool BSExists;
+
 	public BattleState state;
 
 	// Start is called before the first frame update
 	void Start()
 	{
-		
-		
+		if (!BSExists)
+		{
+			BSExists = true;
+			DontDestroyOnLoad(transform.gameObject);
+		}
+		else
+		{
+			Destroy(gameObject);
+		}
+
+
 		state = BattleState.START;
-		StartCoroutine(SetupBattle());
+        Coroutine coroutine = StartCoroutine(SetupBattle());
 	}
 	
 	IEnumerator SetupBattle()
@@ -81,8 +91,7 @@ public class BattleSystem : MonoBehaviour
 		{
 			state = BattleState.WON;
 			EndBattle();
-			enemyPrefab.SetActive(false);
-			enemyPrefab2.SetActive(false);
+			Destroy(GameObject.FindWithTag("Enemy"));
 		}
 		else
 		{
@@ -126,8 +135,7 @@ public class BattleSystem : MonoBehaviour
 		if (state == BattleState.WON)
 		{
 			dialogueText.text = "You won the battle!";
-			enemyPrefab.SetActive(false);
-			enemyPrefab2.SetActive(false);
+			
 
 		}
 		else if (state == BattleState.LOST)
