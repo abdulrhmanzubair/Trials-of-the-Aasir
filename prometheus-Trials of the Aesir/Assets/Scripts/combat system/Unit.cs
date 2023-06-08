@@ -6,7 +6,7 @@ public class Unit : MonoBehaviour
 {
 
 	public string unitName;
-	public int unitLevel;
+	public int unitLevel = 0;
 
 	public int damage;
 
@@ -18,6 +18,7 @@ public class Unit : MonoBehaviour
 		currentHP -= dmg;
 
 		if (currentHP <= 0)
+
 			return true;
 		else
 			return false;

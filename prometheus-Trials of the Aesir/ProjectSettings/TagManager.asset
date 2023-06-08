@@ -7,6 +7,8 @@ TagManager:
   - FavoresOfTheGods
   - position
   - Enemy
+  - Enemy2
+  - Enemy3
   layers:
   - Default
   - TransparentFX

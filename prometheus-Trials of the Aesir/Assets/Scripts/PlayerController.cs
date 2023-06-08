@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rbody;
     Animator anim;
     private static bool playerExists;
-
+    public Animator animator;
 
     // Use this for initialization
     void Start()
@@ -22,12 +22,13 @@ public class PlayerController : MonoBehaviour
         {
             playerExists = true;
             DontDestroyOnLoad(transform.gameObject);
+
         } else
         {
             Destroy(gameObject);
         }
 
-
+        
     }
 
     void FixedUpdate()

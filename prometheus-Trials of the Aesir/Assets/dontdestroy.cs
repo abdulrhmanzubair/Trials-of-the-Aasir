@@ -6,7 +6,7 @@ public class dontdestroy : MonoBehaviour
 {
     private static bool Object;
     // Start is called before the first frame update
-    void Start()
+    void awake()
     {
         if (!Object)
         {
@@ -17,13 +17,21 @@ public class dontdestroy : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        if (!Object)
+        {
+            Object = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            
+        }
     }
 }

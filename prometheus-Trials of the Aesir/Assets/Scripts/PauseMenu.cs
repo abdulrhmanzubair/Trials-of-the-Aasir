@@ -20,7 +20,7 @@ public class PauseMenu : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            
         }
 
     }
@@ -30,13 +30,13 @@ public class PauseMenu : MonoBehaviour
         {
             if (GameIsPaused)
             {
-                BTLSYSTM.SetActive(true);
+                
                 Resume();
             }
             else
             {
                 
-                BTLSYSTM.SetActive(false);
+                
                 Pause();
             }
         }
@@ -47,19 +47,21 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        BTLSYSTM.SetActive(true);
     }
     void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        BTLSYSTM.SetActive(false);
     }
 
     public void LoadMenu()
 
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("GameMenu");
+        SceneManager.LoadScene("GameMenu2");
     }
     public void LoadMAP()
 

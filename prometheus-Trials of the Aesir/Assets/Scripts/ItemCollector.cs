@@ -10,6 +10,7 @@ public class ItemCollector : MonoBehaviour
     private int Favores = 0;
     [SerializeField] private Text FAVORESofTheGods;
     
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,16 +21,17 @@ public class ItemCollector : MonoBehaviour
             Favores ++;
           
             FAVORESofTheGods.text = "FAVORESofTheGods :" + Favores;
-            
+            SceneManager.LoadScene("Map");
+
 
 
 
         }
         
-
-
-
-
-
+        
+    }
+    private void Update()
+    {
+        
     }
 }
