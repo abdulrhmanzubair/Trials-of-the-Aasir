@@ -13,21 +13,22 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
-        if (!MenuExists)
-        {
-            MenuExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-        }
-        else
-        {
-            
-        }
 
+        
     }
-        void Update()
+    private void Awake()
     {
+      
+    }
+    void Update()
+    {
+        
+        
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            
+
             if (GameIsPaused)
             {
                 
@@ -35,10 +36,14 @@ public class PauseMenu : MonoBehaviour
             }
             else
             {
-                
+
                 
                 Pause();
             }
+        }
+        else
+        {
+           
         }
     }
 
@@ -48,6 +53,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
         BTLSYSTM.SetActive(true);
+        Debug.Log("Game is resumed!");
     }
     void Pause()
     {
@@ -55,25 +61,31 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
         BTLSYSTM.SetActive(false);
+        Debug.Log("Game is Paused!");
     }
 
     public void LoadMenu()
 
     {
+        pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene("GameMenu2");
+        BTLSYSTM.SetActive(true);
+        Debug.Log("Menu LOADED");
     }
     public void LoadMAP()
 
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Map");
-        Destroy(gameObject);
+        BTLSYSTM.SetActive(true);
+        Debug.Log("MAP LOADED");
     }
 
     public void QuitGame()
     {
         Debug.Log("Quitting game...");
         Application.Quit();
+        Debug.Log("Quit");
     }
 }

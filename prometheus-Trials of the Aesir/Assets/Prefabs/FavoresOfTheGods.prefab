@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 6598110244964000625}
   - component: {fileID: 6598110244964000624}
   - component: {fileID: 6598110244964000623}
+  - component: {fileID: 3285932626275991163}
+  - component: {fileID: 1108121733366557235}
   m_Layer: 0
   m_Name: FavoresOfTheGods
-  m_TagString: Untagged
+  m_TagString: FavoresOfTheGods
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -683819167, guid: 381f3082f0ab5a74b89ff7d33cd1f4f8, type: 3}
+  m_Sprite: {fileID: -2091363819, guid: 381f3082f0ab5a74b89ff7d33cd1f4f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -105,3 +107,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &3285932626275991163
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6598110244964000622}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.27591968, y: -0.9657028}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.09, y: 8.09121}
+    newSize: {x: 7.180001, y: 7.771162}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.749322, y: 4.542572}
+  m_EdgeRadius: 0
+--- !u!114 &1108121733366557235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6598110244964000622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc48f8d5b082334b8b6b7204a051c4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FAVORESofTheGods: {fileID: 0}
+  FavoresGODS: {fileID: 6598110244964000622}

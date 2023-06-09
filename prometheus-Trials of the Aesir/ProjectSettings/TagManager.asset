@@ -9,6 +9,11 @@ TagManager:
   - Enemy
   - Enemy2
   - Enemy3
+  - favores
+  - favores2
+  - favores3
+  - BATTLEINTANT
+  - Player2
   layers:
   - Default
   - TransparentFX

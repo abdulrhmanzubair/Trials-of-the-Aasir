@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Trial 5.unity
     guid: aca4da0193b502c499a6c4930dddbedd
+  - enabled: 1
+    path: Assets/Scenes/Trial 6.unity
+    guid: 40b9f4aab75df5a4f965a4c497f83dea
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: e899733a15b6c534ea6adb3eaeb6d224, type: 2}

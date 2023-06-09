@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8531225627255568749
 Transform:
   m_ObjectHideFlags: 0
@@ -53,8 +53,12 @@ MonoBehaviour:
   enemyBattleStation2: {fileID: 0}
   dialogueText: {fileID: 0}
   dialogueText2: {fileID: 0}
+  dialogueTextMAIN: {fileID: 0}
   playerHUD: {fileID: 0}
+  EnemyHUDobj: {fileID: 0}
   enemyHUD: {fileID: 0}
+  EnemyHUDobj2: {fileID: 0}
   enemyHUD2: {fileID: 0}
+  EnemyHUDobj3: {fileID: 0}
   enemyHUD3: {fileID: 0}
   state: 0

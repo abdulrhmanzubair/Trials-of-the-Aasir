@@ -7,25 +7,26 @@ using UnityEngine.SceneManagement;
 public class ItemCollector : MonoBehaviour
 {
     public static ItemCollector Counter;
-    private int Favores = 0;
+    
     [SerializeField] private Text FAVORESofTheGods;
     
-    
+    public GameObject FavoresGODS;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("FavoresOfTheGods"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             
-            Destroy(collision.gameObject);
-            Favores ++;
+            
+            
           
-            FAVORESofTheGods.text = "FAVORESofTheGods :" + Favores;
-            SceneManager.LoadScene("Map");
+            
+            
+            
 
-
-
-
+            FavoresGODS.SetActive(false);
+            Debug.Log("FAVORES COLLECTED");
+            
         }
         
         

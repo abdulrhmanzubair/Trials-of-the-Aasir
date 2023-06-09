@@ -10,25 +10,26 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     private static bool playerExists;
     public Animator animator;
-
+    
     // Use this for initialization
     void Start()
     {
-
+        
         rbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
-        if(!playerExists)
+        if (!playerExists)
         {
+
             playerExists = true;
             DontDestroyOnLoad(transform.gameObject);
 
-        } else
+        }
+        else
         {
             Destroy(gameObject);
         }
 
-        
     }
 
     void FixedUpdate()

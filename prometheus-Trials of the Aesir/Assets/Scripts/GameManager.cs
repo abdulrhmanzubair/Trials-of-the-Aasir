@@ -7,23 +7,43 @@ public class GameManager : MonoBehaviour
 {
     public GameObject playerPrefab;
     // Start is called before the first frame update
+    public GameObject BS;
+    public GameObject PM;
+    public GameObject BATTLEintant;
     void Start()
     {
-        if (playerPrefab == null)
-        {
-            Debug.LogError("<Color=Red><a>Missing</a></Color> playerPrefab Reference. Please set it up in GameObject 'Game Manager'", this);
-        }
-        else
-        {
-            Debug.LogFormat("We are Instantiating LocalPlayer from {0}");
-            // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-            
-        }
+        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("BATTLEINTANT"))
+        {
+
+
+           
+        }
+
+        if (collision.gameObject.CompareTag("FavoresOfTheGods"))
+        {
+
+
+            
+        }
+
+
+    }
+
+    public void OpenScene()
+    {
+        
+
     }
 }

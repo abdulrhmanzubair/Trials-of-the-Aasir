@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,4 +26,8 @@ public class BattleHUD : MonoBehaviour
 		hpSlider.value = hp;
 	}
 
+    internal void SetHUD(Unit3 enemyUnit3)
+    {
+        throw new NotImplementedException();
+    }
 }

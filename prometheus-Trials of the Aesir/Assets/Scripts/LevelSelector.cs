@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class LevelSelector : MonoBehaviour
 {
     public int Trial;
-    
+   public GameObject final;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -18,16 +19,17 @@ public class LevelSelector : MonoBehaviour
     public void  OpenScene()
     {
         SceneManager.LoadScene("Trial " + Trial.ToString());
-        GameObject player = GameObject.FindWithTag("Player");
         
+      
+
+        Debug.Log("level loaded");
 
 
 
-        
     }
 
     private void Update()
     {
-        
+      
     }
 }

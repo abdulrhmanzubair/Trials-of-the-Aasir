@@ -159,3 +159,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Trial: 1
+  BATTLESYS: {fileID: 8031272005038971175, guid: 625e16b884e4eb349adf15b3a518fa3c, type: 3}

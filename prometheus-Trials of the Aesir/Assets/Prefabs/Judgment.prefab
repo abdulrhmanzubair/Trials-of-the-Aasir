@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1950567837477031576}
   - component: {fileID: 1950567837477031577}
   - component: {fileID: 1950567837477031578}
+  - component: {fileID: 607162386}
   m_Layer: 0
   m_Name: Judgment
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1950567837477031579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 79.986534, y: 53.15561, z: 40.499516}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -105,3 +106,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &607162386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950567837477031579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c597220400ddcc4cba2d532c23701c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitName: JUDGMENT
+  unitLevel: 99
+  damage: 10
+  maxHP: 55
+  currentHP: 55
